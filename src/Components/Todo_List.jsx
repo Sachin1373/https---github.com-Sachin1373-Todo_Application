@@ -41,7 +41,10 @@ function Todo_List() {
         setTasks(newTasks);
 
         
-        
+        const newDoneTasks = donetask
+            .filter((i) => i !== index)
+            .map((i) => (i > index ? i - 1 : i));
+        setDoneTask(newDoneTasks);
     }
     
     
