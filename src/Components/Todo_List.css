@@ -104,15 +104,19 @@ li {
         width: 100%; /* Full width on very small screens */
         max-width: none;
     }
+    ol {
+        padding: 0 10px; /* Add padding to prevent overflow */
+    }
     li {
         width: 100%;
         font-size: 0.8rem;
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row; /* Align buttons in one line */
+        align-items: center;
     }
     .dbtn1, .dbtn2 {
         width: 40px;
         font-size: 0.7rem;
-        margin-top: 5px;
+        margin: 0 5px; /* Adjust margin for alignment */
     }
 }
+
