@@ -65,7 +65,7 @@ function Todo_List() {
                 >
                     {task}
                     <button className="dbtn1" onClick={() => task_done(index)}>Done</button>
-                    <button className="dbtn2" onClick={() => delete_task(index)}>Delete</button>
+                    <button className="dbtn2" onClick={() => delete_Task(index)}>Delete</button>
                 </li>
                 ))}
             </ol>
