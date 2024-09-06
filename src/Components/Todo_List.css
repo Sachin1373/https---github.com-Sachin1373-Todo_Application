@@ -1,33 +1,28 @@
 .container {
     position: relative;
-    height: auto;
-    width: 90%;
+    height: 100vh;
+    width: 90%; /* Adjust width for responsiveness */
     max-width: 850px;
     background-color: rgb(191, 198, 198);
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto; /* Center the container */
     border-radius: 8px;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
 h1 {
-    padding: 20px 0;
-    font-size: 1.8rem;
+    padding: 35px;
 }
 
 input {
     height: 30px;
-    width: 90%;
+    width: 80%; /* Adjust width for responsiveness */
     max-width: 380px;
     border-radius: 8px;
-    margin: 10px 0;
-    padding: 0 10px;
-    box-sizing: border-box;
+    margin: 5px;
 }
 
 input::placeholder {
-    color: #666;
+    padding: 0; /* Adjust padding for placeholder */
 }
 
 button {
@@ -38,8 +33,7 @@ button {
     height: 35px;
     cursor: pointer;
     border-radius: 8px;
-    border: none;
-    margin: 5px;
+    border: none; /* Remove border */
 }
 
 ol {
@@ -47,47 +41,41 @@ ol {
     flex-direction: column;
     gap: 8px;
     align-items: center;
-    margin: 20px 0;
-    padding: 0;
-    list-style: none;
+    margin-top: 50px;
+    padding: 0; /* Reset default padding */
+    list-style: none; /* Remove default list styling */
 }
 
 li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    min-height: 35px;
+    width: 100%; /* Full width */
     max-width: 600px;
-    font-size: 1rem;
+    font-size: large;
     font-weight: 700;
     background-color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
-    position: relative;
-}
-
-.dbtn-container {
-    display: flex;
-    gap: 10px; /* Add space between buttons */
-    align-items: center;
 }
 
 .dbtn1, .dbtn2 {
-    height: 25px;
-    width: 60px;
+    height: 20px;
+    width: 50px;
     background-color: rgb(15, 16, 16);
     cursor: pointer;
     border: none;
     border-radius: 4px;
     color: white;
     font-weight: 700;
-    font-size: 0.9rem;
 }
 
 .dbtn1 {
     margin-left: auto;
+    margin-right: 10px;
 }
 
 @media (max-width: 768px) {
@@ -99,7 +87,7 @@ li {
         max-width: 300px;
     }
     li {
-        width: 100%;
+        width: 100%; /* Adjust width for smaller screens */
         font-size: 0.9rem;
     }
     .dbtn1, .dbtn2 {
@@ -113,7 +101,7 @@ li {
         font-size: 1.2rem;
     }
     input {
-        width: 100%;
+        width: 100%; /* Full width on very small screens */
         max-width: none;
     }
     li {
@@ -121,11 +109,6 @@ li {
         font-size: 0.8rem;
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px;
-    }
-    .dbtn-container {
-        width: 100%;
-        justify-content: flex-end; /* Align buttons to the right */
     }
     .dbtn1, .dbtn2 {
         width: 40px;
