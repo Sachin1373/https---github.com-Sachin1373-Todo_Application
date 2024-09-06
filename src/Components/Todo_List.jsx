@@ -35,16 +35,13 @@ function Todo_List() {
       };
     
       
-      function delete_Task(index) {
+      function delete_task(index) {
         
         const newTasks = tasks.filter((_, i) => i !== index);
         setTasks(newTasks);
 
         
-        const newDoneTasks = doneTasks
-            .filter((i) => i !== index)
-            .map((i) => (i > index ? i - 1 : i));
-        setDoneTasks(newDoneTasks);
+        
     }
     
     
@@ -65,7 +62,7 @@ function Todo_List() {
                 >
                     {task}
                     <button className="dbtn1" onClick={() => task_done(index)}>Done</button>
-                    <button className="dbtn2" onClick={() => delete_Task(index)}>Delete</button>
+                    <button className="dbtn2" onClick={() => delete_task(index)}>Delete</button>
                 </li>
                 ))}
             </ol>
