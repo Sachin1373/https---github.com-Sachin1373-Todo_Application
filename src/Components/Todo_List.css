@@ -1,11 +1,11 @@
 .container {
     position: relative;
     height: 100vh;
-    width: 90%; /* Adjust width for responsiveness */
+    width: 90%; 
     max-width: 850px;
     background-color: rgb(191, 198, 198);
     text-align: center;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto; 
     border-radius: 8px;
 }
 
@@ -15,14 +15,14 @@ h1 {
 
 input {
     height: 30px;
-    width: 80%; /* Adjust width for responsiveness */
+    width: 80%; 
     max-width: 380px;
     border-radius: 8px;
     margin: 5px;
 }
 
 input::placeholder {
-    padding: 0; /* Adjust padding for placeholder */
+    padding: 0; 
 }
 
 button {
@@ -42,8 +42,8 @@ ol {
     gap: 8px;
     align-items: center;
     margin-top: 50px;
-    padding: 0; /* Reset default padding */
-    list-style: none; /* Remove default list styling */
+    padding: 0; 
+    list-style: none; 
 }
 
 li {
@@ -51,7 +51,7 @@ li {
     align-items: center;
     justify-content: space-between;
     min-height: 35px;
-    width: 100%; /* Full width */
+    width: 100%; 
     max-width: 600px;
     font-size: large;
     font-weight: 700;
@@ -95,11 +95,13 @@ li {
         font-size: 0.8rem;
         flex-direction: row; /* Align buttons in one line */
         align-items: center;
-        justify-content: space-between; /* Ensure space between items */
+        /* justify-content: space-between;  */
     }
     .dbtn1, .dbtn2 {
-        width: 40px;
+        width: 45px;
         font-size: 0.7rem;
-        margin: 0 5px; /* Adjust margin for alignment */
+        
+         
     }
+    
 }
