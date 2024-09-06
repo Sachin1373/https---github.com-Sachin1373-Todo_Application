@@ -1,26 +1,31 @@
-.container{
+.container {
     position: relative;
     height: 100vh;
-    width: 850px;
+    width: 90%; /* Adjust width for responsiveness */
+    max-width: 850px;
     background-color: rgb(191, 198, 198);
     text-align: center;
-    left: 21%;
+    margin: 0 auto; /* Center the container */
     border-radius: 8px;
-    
 }
-h1{
+
+h1 {
     padding: 35px;
 }
-input{
+
+input {
     height: 30px;
-    width:380px;
+    width: 80%; /* Adjust width for responsiveness */
+    max-width: 380px;
     border-radius: 8px;
     margin: 5px;
 }
-input::placeholder{
-    padding: 20px;
+
+input::placeholder {
+    padding: 0; /* Adjust padding for placeholder */
 }
-button{
+
+button {
     color: white;
     background-color: black;
     font-weight: 700;
@@ -28,8 +33,9 @@ button{
     height: 35px;
     cursor: pointer;
     border-radius: 8px;
-
+    border: none; /* Remove border */
 }
+
 ol {
     display: flex;
     flex-direction: column;
@@ -40,25 +46,23 @@ ol {
     list-style: none; /* Remove default list styling */
 }
 
-li{
+li {
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-height: 35px;
-    margin-left: 10px;
-    width: 600px;
+    width: 100%; /* Full width */
+    max-width: 600px;
     font-size: large;
     font-weight: 700;
     background-color: white;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
 }
 
-.dbtn1 {
-    margin-left: auto; 
-    margin-right: 10px; 
+.dbtn1, .dbtn2 {
     height: 20px;
     width: 50px;
     background-color: rgb(15, 16, 16);
@@ -68,16 +72,10 @@ li{
     color: white;
     font-weight: 700;
 }
-.dbtn2 {
-    
-    height: 20px;
-    width: 50px;
-    background-color: rgb(15, 16, 16);
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    font-weight: 700;
+
+.dbtn1 {
+    margin-left: auto;
+    margin-right: 10px;
 }
 
 @media (max-width: 768px) {
@@ -89,7 +87,7 @@ li{
         max-width: 300px;
     }
     li {
-        width: 95%;
+        width: 100%; /* Adjust width for smaller screens */
         font-size: 0.9rem;
     }
     .dbtn1, .dbtn2 {
@@ -103,7 +101,7 @@ li{
         font-size: 1.2rem;
     }
     input {
-        width: 100%;
+        width: 100%; /* Full width on very small screens */
         max-width: none;
     }
     li {
