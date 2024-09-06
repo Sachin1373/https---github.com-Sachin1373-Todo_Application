@@ -78,40 +78,24 @@ li {
     margin-right: 10px;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-    input {
-        width: 90%;
-        max-width: 300px;
-    }
-    li {
-        width: 100%; /* Adjust width for smaller screens */
-        font-size: 0.9rem;
-    }
-    .dbtn1, .dbtn2 {
-        width: 50px;
-        font-size: 0.8rem;
-    }
-}
-
 @media (max-width: 480px) {
     h1 {
         font-size: 1.2rem;
     }
     input {
-        width: 100%; /* Full width on very small screens */
+        width: calc(100% - 20px); /* Full width minus padding for container */
         max-width: none;
+        box-sizing: border-box; /* Ensure padding is included in width calculation */
     }
     ol {
         padding: 0 10px; /* Add padding to prevent overflow */
     }
     li {
-        width: 100%;
+        width: calc(100% - 20px); /* Adjust width for padding */
         font-size: 0.8rem;
         flex-direction: row; /* Align buttons in one line */
         align-items: center;
+        justify-content: space-between; /* Ensure space between items */
     }
     .dbtn1, .dbtn2 {
         width: 40px;
@@ -119,4 +103,3 @@ li {
         margin: 0 5px; /* Adjust margin for alignment */
     }
 }
-
