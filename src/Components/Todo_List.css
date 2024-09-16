@@ -75,7 +75,8 @@ li {
 
 .dbtn1 {
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: 20px;
+    width: 60px;
 }
 
 @media (max-width: 480px) {

@@ -29,9 +29,11 @@ function Todo_List() {
         }
     }
     const task_done = (index) => {
-        if (!donetask.includes(index)) {
-          setDoneTask((prev) => [...prev, index]);
-        }
+        if (donetask.includes(index)) {
+            setDoneTask(donetask.filter((i) => i !== index));
+          } else {
+            setDoneTask((prev) => [...prev, index]);
+          }
       };
     
       
@@ -64,7 +66,7 @@ function Todo_List() {
                     }}
                 >
                     {task}
-                    <button className="dbtn1" onClick={() => task_done(index)}>Done</button>
+                    <button className="dbtn1" onClick={() => task_done(index)}>{donetask.includes(index) ? 'Undone' : 'done'}</button>
                     <button className="dbtn2" onClick={() => delete_task(index)}>Delete</button>
                 </li>
                 ))}
