@@ -79,8 +79,8 @@ li {
     width: 60px;
 }
 .edit{
-   position: fixed;
-   left: 820px;
+   position: absolute;
+   left: 480px;
    width: 60px;
 }
 
