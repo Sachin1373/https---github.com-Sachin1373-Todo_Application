@@ -62,9 +62,9 @@ li {
     box-sizing: border-box;
 }
 
-.dbtn1, .dbtn2 {
+.dbtn1, .dbtn2, .edit {
     height: 20px;
-    width: 50px;
+    width: 60px;
     background-color: rgb(15, 16, 16);
     cursor: pointer;
     border: none;
@@ -77,6 +77,11 @@ li {
     margin-left: auto;
     margin-right: 20px;
     width: 60px;
+}
+.edit{
+   position: fixed;
+   left: 820px;
+   width: 60px;
 }
 
 @media (max-width: 480px) {
